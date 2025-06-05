@@ -1,0 +1,117 @@
+/* General Styling */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #020024, #610e0f, #000);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    padding: 25px;
+    width: auto;
+    max-width: 450px;
+    margin: 40px auto;
+    box-shadow: 0px 8px 15px rgba(255, 0, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    text-align: left;
+    width: 90%;
+    margin-top: 15px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Input fields */
+input, select {
+    padding: 12px;
+    width: 90%;
+    border: 2px solid #ff00ff;
+    background: #222;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    margin-bottom: 12px;  /* Added spacing */
+}
+
+input:focus, select:focus {
+    border-color: #00e6ff;
+    box-shadow: 0px 0px 8px #00e6ff;
+}
+
+/* Predicted Price */
+.result {
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #6a0202b5, #171716);
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(255, 69, 0, 0.6);
+    animation: popUp 1s ease-in-out;
+}
+
+/* Predict Button - WOW Factor */
+button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 12px 18px;
+    border-radius: 30px;
+    color: #fff;
+    width: 90%;
+    margin-top: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ff00ff, #00e6ff);
+    box-shadow: 0 0 12px #ff00ff, 0 0 18px #00e6ff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px #ff00ff, 0 0 30px #00e6ff;
+    background: linear-gradient(45deg, #00e6ff, #ff00ff);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popUp {
+    from {
+        transform: scale(0.9);
+        opacity: 0.8;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
