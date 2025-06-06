@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars24 Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h1 class="title">Cars24 Price Predictor</h1>
+
+
+    <div class="container">
+        {% if result %}
+            <p class="result">{{ result }}</p>
+        {% endif %}
+
+        <form method="post" action="/predict">
+            <label for="company">Company:</label>
+            <input type="text" name="company" id="company" required>
+
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" required>
+
+            <label for="year">Year of Manufacture:</label>
+            <input type="number" name="year" id="year" required>
+
+            <label for="km_driven">Kilometers Driven:</label>
+            <input type="number" name="km_driven" id="km_driven" required>
+
+            <label for="num_owners">Number of Owners:</label>
+            <input type="number" name="num_owners" id="num_owners" required>
+
+            <label for="fuel_type">Fuel Type:</label>
+            <select name="fuel_type" id="fuel_type" required>
+                <option value="0">Petrol</option>
+                <option value="1">Diesel</option>
+            </select>
+
+            <label for="calculated_score">Calculated Score:</label>
+            <input type="number" step="0.01" name="calculated_score" id="calculated_score" required>
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+
+</body>
+</html>
