@@ -5,6 +5,9 @@ This project uses machine learning to predict the selling price of a car based o
 
 ---
 
+![Crime Rate Prediction Banner](https://github.com/karthikprogr/Car-Price-Prediction/blob/main/static/Screenshot%202025-06-06%20140706.png)
+
+
 ## 📌 About the Project
 
 Buying or selling a car can be tricky without knowing its actual market value. This Car Price Predictor uses real-world data and a trained machine learning model to make accurate price predictions based on car features. The model is trained on a dataset containing details of used cars listed for sale.
