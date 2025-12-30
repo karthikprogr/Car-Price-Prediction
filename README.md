@@ -1,4 +1,4 @@
-# 🚗 Car Price Predictor – Know Your Car’s Worth with AI
+# 🚗 Car Price Predictor – Know Your Car’s Worth with AI 🚗
 
 
 This project uses machine learning to predict the selling price of a car based on various features like year, brand, fuel type, transmission, kilometers driven, and more. It helps users estimate a fair price for used cars, aiding both sellers and buyers.
@@ -92,6 +92,7 @@ Contributions are welcome!
 Feel free to reach out:
 
 - 📧 Email: [seelamkarthik2006@gmail.com](seelamkarthik2006@gmail.com)
+-  LinkedIn: [linkedin.com/in/seelam-karthik-62265831b](linkedin.com/in/seelam-karthik-62265831b)
 
 ---
 
